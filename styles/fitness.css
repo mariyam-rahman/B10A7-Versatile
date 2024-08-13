@@ -3,3 +3,75 @@
   font-optical-sizing: auto;
   font-style: normal;
 }
+body {
+  background-color: black;
+}
+
+/* shared styles */
+.display-flex {
+  display: flex;
+}
+.max-width {
+  max-width: 800px;
+  margin: auto;
+}
+
+.title {
+  color: white;
+  font-weight: 900;
+  font-size: 3rem;
+}
+
+.dark {
+  color: rgba(255, 255, 255, 0.5);
+  font-weight: 400;
+}
+.btn {
+  background-color: rgba(230, 83, 60, 1);
+  padding: 16px 40px;
+  color: white;
+  border-radius: 40px;
+}
+.btn-white {
+  background-color: transparent;
+  padding: 16px 40px;
+  color: white;
+  border: 1px solid white;
+  border-radius: 40px;
+}
+
+/* header styles */
+
+.brand {
+  color: rgba(230, 83, 60, 1);
+  font-weight: 800;
+  font-size: 2.3rem;
+  margin: 10px 0;
+  font-style: italic;
+}
+/* navbar styles */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item {
+  list-style: none;
+  margin-right: 20px;
+  padding: 6px 20px;
+  margin-top: 10px;
+}
+
+.nav-item:hover {
+  background-color: rgba(230, 83, 60, 1);
+  padding: 6px 20px;
+  border-radius: 25px;
+  /* transition: 1s;  */
+}
+.nav-link {
+  text-decoration: none;
+  color: white;
+}
