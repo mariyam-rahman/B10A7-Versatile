@@ -29,10 +29,12 @@ h1 {
   font-weight: 900;
   line-height: 6rem;
 }
+
 .title {
   color: white;
   font-weight: 800;
   font-size: 4rem;
+  margin: 10px 0;
 }
 
 .dark {
@@ -89,7 +91,6 @@ h1 {
 
 .nav-item:hover {
   background-color: rgba(230, 83, 60, 1);
-
   padding: 10px 25px;
   border-radius: 25px;
   /* transition: 1s;  */
@@ -97,12 +98,6 @@ h1 {
 .nav-link {
   text-decoration: none;
   color: white;
-}
-
-@media screen and(max-width: 425px) {
-  .navbar {
-    border: 1px solid blue;
-  }
 }
 
 /* banner section---- */
@@ -142,10 +137,38 @@ h1 {
 .habit-items {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 30px;
 }
 .habit-items img {
-  border: 4px solid rgb(70, 69, 69);
+  border: 4px solid rgba(255, 255, 255, 0.1);
   border-radius: 50%;
-  width: 80%;
+  width: 250px;
+}
+
+/* <!-- newsletter section-------- --> */
+.newsletter {
+  background-color: rgba(34, 34, 34, 1);
+  margin: 100px 0;
+  border-radius: 20px;
+  display: flex;
+  padding: 3rem;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.newsletter img {
+  width: 30rem;
+  border-radius: 20px;
+}
+
+@media screen and (max-width: 576px) {
+  .habit-items {
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: center;
+  }
+  .habit-items img {
+    width: 200px;
+  }
+  .nav-link {
+    display: none;
+  }
 }
