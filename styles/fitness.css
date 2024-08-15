@@ -167,7 +167,7 @@ h1 {
   margin: 100px 0;
 }
 
-.team-img {
+.team-gallery {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
@@ -178,10 +178,22 @@ h1 {
   margin: 40px auto;
 }
 
-.team img {
-  width: 420px;
-  height: 360px;
+.team-img {
+  position: relative;
+  width: 400px;
+  height: 350px;
+  object-fit: cover;
+}
+.team-content {
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+  text-align: left;
+}
 
+.team img {
+  width: 100%;
+  height: 100%;
   border-radius: 20px;
 }
 
@@ -212,5 +224,8 @@ hr {
   }
   .nav-link {
     display: none;
+  }
+  .team-gallery {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
